@@ -24,6 +24,10 @@ public class NameTagApplyListener implements Listener {
         IRank rank = plugin.getRankManager().getRank();
         ConfigurationSection section = plugin.getSettingsConfig().getConfiguration().getConfigurationSection("RANK_NAMETAG");
 
+        if (plugin.getNametag().getNametagHandler().doesPlayerHaveNametag(player)) {
+            plugin.getNametag().getNametagHandler().setNametag(player, new PlayerNametag("", player.getName(), ""));
+        }
+
         if (section != null) {
             String rankNametag = section.getString(rank.getRankName(player.getUniqueId()));
             if (rankNametag != null) {
