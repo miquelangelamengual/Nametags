@@ -1,0 +1,4 @@
+# You have to provide the name of the rank (case sensitive)
+
+RANK_PREFIX:
+  owner: "&4&lOWNER "
