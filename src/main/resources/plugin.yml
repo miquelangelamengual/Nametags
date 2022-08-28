@@ -1,0 +1,4 @@
+name: Nametags
+version: '${project.version}'
+main: es.hulk.nametags.Nametags
+api-version: 1.16
